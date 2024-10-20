@@ -1,0 +1,16 @@
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+myflyer\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+myflyer\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+myflyer\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\tasks.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\tasks.o: ../Core/Inc/FreeRTOSConfig.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+myflyer\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h
