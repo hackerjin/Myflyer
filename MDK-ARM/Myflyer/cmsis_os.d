@@ -1,9 +1,9 @@
 myflyer\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c
-myflyer\cmsis_os.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+myflyer\cmsis_os.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 myflyer\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 myflyer\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-myflyer\cmsis_os.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-myflyer\cmsis_os.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\cmsis_os.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\cmsis_os.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 myflyer\cmsis_os.o: ../Core/Inc/FreeRTOSConfig.h
 myflyer\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 myflyer\cmsis_os.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

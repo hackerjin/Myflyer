@@ -1,11 +1,11 @@
 myflyer\radio_comm.o: ..\Comm\radio_comm.c
-myflyer\radio_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
-myflyer\radio_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
-myflyer\radio_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+myflyer\radio_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+myflyer\radio_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\radio_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 myflyer\radio_comm.o: ..\Comm\radio_comm.h
 myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-myflyer\radio_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\radio_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 myflyer\radio_comm.o: ../Core/Inc/FreeRTOSConfig.h
 myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
@@ -19,5 +19,5 @@ myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 myflyer\radio_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 myflyer\radio_comm.o: ..\Comm\usart_comm.h
-myflyer\radio_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+myflyer\radio_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 myflyer\radio_comm.o: ..\Comm\atkp.h

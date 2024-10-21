@@ -649,6 +649,16 @@
               <FileType>1</FileType>
               <FilePath>..\Comm\atkp.c</FilePath>
             </File>
+            <File>
+              <FileName>remoter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Comm\remoter.c</FilePath>
+            </File>
+            <File>
+              <FileName>commander.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Comm\commander.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

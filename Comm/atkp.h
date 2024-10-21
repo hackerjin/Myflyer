@@ -3,11 +3,10 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-/*??????*/
 #define UP_BYTE1 0xAA
 #define UP_BYTE2 0xAA
 
-/*??????*/
+
 #define DOWN_BYTE1 0xAA
 #define DOWN_BYTE2 0xAF
 
@@ -21,7 +20,7 @@ typedef struct
 	uint8_t data[ATKP_MAX_DATA_SIZE];
 }atkp_t;
 
-/*???????ID*/
+
 typedef enum 
 {
 	UP_VERSION		= 0x00,

@@ -1,7 +1,7 @@
 myflyer\freertos.o: ../Core/Src/freertos.c
 myflyer\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-myflyer\freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-myflyer\freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\freertos.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\freertos.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 myflyer\freertos.o: ../Core/Inc/FreeRTOSConfig.h
 myflyer\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 myflyer\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

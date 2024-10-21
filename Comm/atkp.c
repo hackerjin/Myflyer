@@ -5,6 +5,7 @@
 #include "FreeRTOS.h"
 #include <string.h>
 #include "atkp.h"
+#include "remoter.h"
 extern void atkp_send_packet(const atkp_t *p);
 
 //数据拆分宏定义
@@ -32,6 +33,12 @@ extern void atkp_send_packet(const atkp_t *p);
 //atkpRx的接收队列用来缓存接收数据
 static xQueueHandle rxQueue;
 
+//向atkp发送atkp格式的包
+bool send_atkp_packet(atkp_t *p)
+{
+	return xQueueSend(rxQueue, p, portMAX_DELAY);	
+}
+
 
 
 
@@ -42,9 +49,46 @@ void atkp_init()
 
 }
 
-
-bool send_atkp_packet(atkp_t *p)
+//周期性发送主控数据的任务
+void atkp_tx_task(void *param)
 {
-	return xQueueSend(rxQueue, p, portMAX_DELAY);	
+	while(1)
+    {
+        
+        
+    }
 }
+
+void atkp_rxpacket_handle(atkp_t *rx_packet)
+{
+     //控制四轴的控制命令或者控制数据
+	if(rx_packet->msgID == DOWN_REMOTER)
+	{
+		 remoter_rxpacket_handle(rx_packet);
+	}
+ 
+    
+}
+
+
+
+
+
+//主控接收数据任务
+void atkp_rx_task(void *param)
+{
+	atkp_t p;
+	while(1)
+	{
+        //从消息队列中获取消息，此处获取到的数据是已经去掉帧头帧尾的
+		xQueueReceive(rxQueue, &p, portMAX_DELAY);
+        
+        //处理获取的消息
+		atkp_rxpacket_handle(&p);
+	}
+}
+
+
+
+
 

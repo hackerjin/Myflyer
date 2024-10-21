@@ -1,9 +1,9 @@
 myflyer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/queue.c
-myflyer\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-myflyer\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+myflyer\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+myflyer\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\string.h
 myflyer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-myflyer\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-myflyer\queue.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\queue.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 myflyer\queue.o: ../Core/Inc/FreeRTOSConfig.h
 myflyer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 myflyer\queue.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

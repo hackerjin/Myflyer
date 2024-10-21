@@ -33,8 +33,9 @@ void usart_comm_init()
 void fill_queue(uint8_t data)
 {
     
-    xQueueSendFromISR(to_radio_queue, &data, 0);
-    
+    BaseType_t has_higher;
+    xQueueSendFromISR(to_radio_queue, &data, &has_higher);
+   
 }
 
 

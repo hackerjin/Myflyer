@@ -1,8 +1,8 @@
 myflyer\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/timers.c
-myflyer\timers.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+myflyer\timers.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdlib.h
 myflyer\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-myflyer\timers.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
-myflyer\timers.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\timers.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\timers.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 myflyer\timers.o: ../Core/Inc/FreeRTOSConfig.h
 myflyer\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 myflyer\timers.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

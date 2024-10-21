@@ -5,11 +5,11 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.36.0.0
 Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Hongjin Yao, NJUST, LIC=SDA0P-MD6XW-DYLV3-AA6UD-1BVK4-QCESY
+License Information: hongjin yao, njust, LIC=FYKYW-QRJV5-SBIEJ-UE88W-06QJE-ICQH7
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
-Toolchain Path:  D:\keil5\ARM\ARMCC\Bin
+Toolchain Path:  D:\MDK\ARM\ARMCC\Bin
 C Compiler:      Armcc.exe V5.06 update 7 (build 960)
 Assembler:       Armasm.exe V5.06 update 7 (build 960)
 Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
@@ -21,12 +21,65 @@ Target DLL:      CMSIS_AGDI.dll V1.33.0.0
 Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
-C:\Users\design\Downloads\Myflyer\MDK-ARM\Myflyer.uvprojx
-Project File Date:  10/16/2024
+C:\Users\yaohongjin\Downloads\Myflyer\MDK-ARM\Myflyer.uvprojx
+Project File Date:  10/21/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\keil5\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\MDK\ARM\ARMCC\Bin'
 Build target 'Myflyer'
+assembling startup_stm32f411xe.s...
+compiling freertos.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_timebase_tim.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_it.c...
+../Core/Src/stm32f4xx_it.c(62): warning:  #1295-D: Deprecated declaration EXTI4_Callback - give arg types
+  void EXTI4_Callback();
+../Core/Src/stm32f4xx_it.c: 1 warning, 0 errors
+compiling main.c...
+..\Drivers\BSP\iic.h(7): warning:  #1295-D: Deprecated declaration get_device_id - give arg types
+  uint8_t get_device_id();
+..\Drivers\BSP\usart.h(4): warning:  #1295-D: Deprecated declaration usart1_init - give arg types
+  void usart1_init();
+..\Drivers\BSP\usart.h(5): warning:  #1295-D: Deprecated declaration usart2_init - give arg types
+  void usart2_init();
+..\Drivers\BSP\usart.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FLIGHT\sensors.h(287): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Comm\radio_comm.h(6): warning:  #1295-D: Deprecated declaration radio_init - give arg types
+  void radio_init();
+../Core/Src/main.c(9): warning:  #1295-D: Deprecated declaration usart_comm_init - give arg types
+  extern void usart_comm_init();
+../Core/Src/main.c(10): warning:  #1295-D: Deprecated declaration atkp_init - give arg types
+  extern void atkp_init();
+../Core/Src/main.c: 8 warnings, 0 errors
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling list.c...
+compiling queue.c...
+compiling tasks.c...
+compiling timers.c...
+compiling stm32f4xx_hal_exti.c...
+compiling cmsis_os.c...
+compiling heap_4.c...
+compiling port.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_uart.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling atkp.c...
+..\Comm\remoter.h(54): error:  #70: incomplete type is not allowed
+  	enum expModuleID moduleID;
+..\Comm\atkp.c: 0 warnings, 1 error
 compiling radio_comm.c...
 ..\Comm\radio_comm.h(6): warning:  #1295-D: Deprecated declaration radio_init - give arg types
   void radio_init();
@@ -39,10 +92,88 @@ compiling radio_comm.c...
 ..\Comm\radio_comm.c(85): warning:  #177-D: function "atkp_packet_dispatch"  was declared but never referenced
   static void atkp_packet_dispatch(atkp_t *rxPacket)
 ..\Comm\radio_comm.c: 5 warnings, 0 errors
-linking...
-Program Size: Code=14714 RO-data=474 RW-data=248 ZI-data=34864  
-FromELF: creating hex file...
-"Myflyer\Myflyer.axf" - 0 Error(s), 5 Warning(s).
+compiling remoter.c...
+..\Comm\remoter.h(54): error:  #70: incomplete type is not allowed
+  	enum expModuleID moduleID;
+..\Comm\remoter.c(5): error:  #20: identifier "ctrlVal_t" is undefined
+  static ctrlVal_t remoterCtrl;/*发送到commander姿态控制数据*/
+..\Comm\remoter.c(29): warning:  #223-D: function "setCommanderCtrlMode" declared implicitly
+  		setCommanderCtrlMode(remoterData.ctrlMode);
+..\Comm\remoter.c(30): warning:  #223-D: function "setCommanderFlightmode" declared implicitly
+  		setCommanderFlightmode(remoterData.flightMode);
+..\Comm\remoter.c(33): warning:  #223-D: function "flightCtrldataCache" declared implicitly
+  		flightCtrldataCache(ATK_REMOTER, remoterCtrl);
+..\Comm\remoter.c(33): error:  #20: identifier "ATK_REMOTER" is undefined
+  		flightCtrldataCache(ATK_REMOTER, remoterCtrl);
+..\Comm\remoter.c(37): warning:  #1-D: last line of file ends without a newline
+  }
+..\Comm\remoter.c(6): warning:  #177-D: variable "msg"  was declared but never referenced
+  static MiniFlyMsg_t msg;
+..\Comm\remoter.c(7): warning:  #177-D: variable "reSendTimes"  was declared but never referenced
+  static uint8_t reSendTimes = 3;	/*微调重发次数*/
+..\Comm\remoter.c: 6 warnings, 3 errors
+compiling stm32f4xx_hal_tim.c...
+compiling stm32f4xx_hal_i2c.c...
+compiling usart.c...
+..\Drivers\BSP\usart.h(4): warning:  #1295-D: Deprecated declaration usart1_init - give arg types
+  void usart1_init();
+..\Drivers\BSP\usart.h(5): warning:  #1295-D: Deprecated declaration usart2_init - give arg types
+  void usart2_init();
+..\Drivers\BSP\usart.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Drivers\BSP\usart.c: 3 warnings, 0 errors
+compiling iic.c...
+..\Drivers\BSP\iic.h(7): warning:  #1295-D: Deprecated declaration get_device_id - give arg types
+  uint8_t get_device_id();
+..\Drivers\BSP\iic.c: 1 warning, 0 errors
+compiling tim.c...
+compiling usart_comm.c...
+..\Comm\usart_comm.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Comm\usart_comm.c(17): warning:  #177-D: variable "isInit"  was declared but never referenced
+  static bool isInit = false;
+..\Comm\usart_comm.c(19): warning:  #177-D: variable "waitUntilSendDone"  was declared but never referenced
+  static xSemaphoreHandle waitUntilSendDone;
+..\Comm\usart_comm.c(20): warning:  #177-D: variable "uartBusy"  was declared but never referenced
+  static xSemaphoreHandle uartBusy;
+..\Comm\usart_comm.c: 4 warnings, 0 errors
+compiling commander.c...
+..\Comm\commander.c(15): warning:  #177-D: variable "isRCLocked"  was declared but never referenced
+  static bool isRCLocked;				/* 遥控锁定状态 */
+..\Comm\commander.c(26): warning:  #177-D: variable "nowCache"  was declared but never referenced
+  static ctrlValCache_t* nowCache = &remoteCache;/*默认为遥控*/
+..\Comm\commander.c(31): warning:  #550-D: variable "ctrlValLpf"  was set but never used
+  static ctrlVal_t ctrlValLpf = {0.f};/* 控制数据低通 */
+..\Comm\commander.c(34): warning:  #177-D: variable "minAccZ"  was declared but never referenced
+  static float minAccZ = 0.f; 
+..\Comm\commander.c(35): warning:  #177-D: variable "maxAccZ"  was declared but never referenced
+  static float maxAccZ = 0.f; 
+..\Comm\commander.c(38): warning:  #177-D: variable "yawMode"  was declared but never referenced
+  static YawModeType yawMode = XMODE;	/* 默认为X飞行模式 */
+..\Comm\commander.c(50): warning:  #177-D: function "commanderDropToGround"  was declared but never referenced
+  static void commanderDropToGround(void)
+..\Comm\commander.c: 7 warnings, 0 errors
+compiling spl06.c...
+..\Drivers\BSP\iic.h(7): warning:  #1295-D: Deprecated declaration get_device_id - give arg types
+  uint8_t get_device_id();
+..\FLIGHT\spl06.c: 1 warning, 0 errors
+compiling sensors.c...
+..\Drivers\BSP\iic.h(7): warning:  #1295-D: Deprecated declaration get_device_id - give arg types
+  uint8_t get_device_id();
+..\FLIGHT\sensors.h(287): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FLIGHT\mpu9250.h(398): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\FLIGHT\sensors.c(53): warning:  #177-D: variable "isInit"  was declared but never referenced
+  static bool isInit = false;
+..\FLIGHT\sensors.c(55): warning:  #550-D: variable "gyroRaw"  was set but never used
+  static Axis3i16	gyroRaw;
+..\FLIGHT\sensors.c(56): warning:  #550-D: variable "accRaw"  was set but never used
+  static Axis3i16	accRaw;
+..\FLIGHT\sensors.c(57): warning:  #550-D: variable "magRaw"  was set but never used
+  static Axis3i16 magRaw;
+..\FLIGHT\sensors.c: 7 warnings, 0 errors
+"Myflyer\Myflyer.axf" - 4 Error(s), 43 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -59,14 +190,15 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_Myflyer
-  D:\keil5\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
-  D:\keil5\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+  C:\Users\yaohongjin\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\yaohongjin\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.5.0
       Include file:  CMSIS\Core\Include\tz_context.h
-Build Time Elapsed:  00:00:01
+Target not created.
+Build Time Elapsed:  00:00:28
 </pre>
 </body>
 </html>

@@ -91,7 +91,7 @@ static void atkp_packet_dispatch(atkp_t *rxPacket)
 	if( rxPacket->msgID != DOWN_POWER)
 	{
 		
-		if(xQueueReceive(tx_queue, &tx_packet, 0) == pdTRUE)
+		if(xQueueReceive(tx_queue, &tx_packet, 1000) == pdTRUE)
 		{
 			usart_send_packet(&tx_packet);
 		}

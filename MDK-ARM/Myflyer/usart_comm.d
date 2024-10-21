@@ -1,11 +1,11 @@
 myflyer\usart_comm.o: ..\Comm\usart_comm.c
-myflyer\usart_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
-myflyer\usart_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
-myflyer\usart_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+myflyer\usart_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+myflyer\usart_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\usart_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 myflyer\usart_comm.o: ..\Comm\usart_comm.h
 myflyer\usart_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h
 myflyer\usart_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-myflyer\usart_comm.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\usart_comm.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 myflyer\usart_comm.o: ../Core/Inc/FreeRTOSConfig.h
 myflyer\usart_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 myflyer\usart_comm.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

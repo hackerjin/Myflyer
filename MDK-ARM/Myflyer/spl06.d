@@ -1,11 +1,11 @@
 myflyer\spl06.o: ..\FLIGHT\spl06.c
-myflyer\spl06.o: D:\keil5\ARM\ARMCC\Bin\..\include\math.h
-myflyer\spl06.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+myflyer\spl06.o: D:\MDK\ARM\ARMCC\Bin\..\include\math.h
+myflyer\spl06.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 myflyer\spl06.o: ..\FLIGHT\spl06.h
 myflyer\spl06.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 myflyer\spl06.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h
 myflyer\spl06.o: ../Drivers/CMSIS/Include/core_cm4.h
-myflyer\spl06.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\spl06.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdint.h
 myflyer\spl06.o: ../Drivers/CMSIS/Include/cmsis_version.h
 myflyer\spl06.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 myflyer\spl06.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -17,7 +17,7 @@ myflyer\spl06.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
 myflyer\spl06.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 myflyer\spl06.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 myflyer\spl06.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-myflyer\spl06.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\spl06.o: D:\MDK\ARM\ARMCC\Bin\..\include\stddef.h
 myflyer\spl06.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 myflyer\spl06.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 myflyer\spl06.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
