@@ -1,0 +1,15 @@
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+myflyer\event_groups.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+myflyer\event_groups.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+myflyer\event_groups.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+myflyer\event_groups.o: ../Core/Inc/FreeRTOSConfig.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+myflyer\event_groups.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
