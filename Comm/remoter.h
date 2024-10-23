@@ -44,6 +44,16 @@ typedef __packed struct
 	bool RCLock;
 } remoterData_t;
 
+
+enum expModuleID
+{
+	NO_MODULE,
+	LED_RING,
+	WIFI_CAMERA,
+	OPTICAL_FLOW,
+	MODULE1,
+};
+
 typedef __packed struct
 {
 	uint8_t version;

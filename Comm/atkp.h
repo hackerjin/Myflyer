@@ -97,6 +97,8 @@ typedef enum
 }downmsgID_e;
 
 
+void atkp_send_packet(const atkp_t *p);
 
+void atkp_rx_task(void *param);
 
 #endif /*ATKP_H*/

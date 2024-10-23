@@ -124,7 +124,7 @@ void radio_comm_task(void *param)
 					cksum = c;
 					break;
                 case waitForStartByte2:
-                    rx_state = (c == DOWN_BYTE2) ? waitForMsgID : waitForStartByte2;
+                    rx_state = (c == DOWN_BYTE2) ? waitForMsgID : waitForStartByte1;
 					cksum += c;
 					break;
                 case waitForMsgID:
@@ -157,8 +157,8 @@ void radio_comm_task(void *param)
                  case waitForChksum1:
 					if (cksum == c)	/*所有校验正确*/
 					{                 
-                        printf("nrf数据校验正确\n");
-						//atkp_packet_dispatch(&rx_packet);
+                        printf("msgid is %X\n",rx_packet.msgID);
+						atkp_packet_dispatch(&rx_packet);
 					} 
 					else	/*校验错误*/
 					{       

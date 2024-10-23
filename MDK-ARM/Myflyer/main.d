@@ -53,3 +53,4 @@ myflyer\main.o: ..\Drivers\BSP\usart.h
 myflyer\main.o: ..\FLIGHT\sensors.h
 myflyer\main.o: D:\MDK\ARM\ARMCC\Bin\..\include\stdbool.h
 myflyer\main.o: ..\Comm\radio_comm.h
+myflyer\main.o: ..\Comm\atkp.h

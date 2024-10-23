@@ -58,6 +58,13 @@ typedef enum
 	
 
 /*Ò£¿ØÊý¾Ý»º´æ*/
-void remoter_data_cache(ctrlSrc_e ctrlSrc, ctrlVal_t pk)
+void flightCtrldataCache(ctrlSrc_e ctrlSrc, ctrlVal_t pk);
+
+
+void setCommanderCtrlMode(uint8_t set);
+
+void setCommanderFlightmode(bool set);
+    
+
     
 #endif /* __COMMANDER_H */

@@ -38,6 +38,12 @@ static float maxAccZ = 0.f;
 static YawModeType yawMode = XMODE;	/* 默认为X飞行模式 */
 static commanderBits_t commander;
 
+
+//当前时间戳
+uint32_t timestamp = 0;
+
+
+
 //RPY即欧拉角
 static void commanderLevelRPY(void)
 {
@@ -58,19 +64,27 @@ static void commanderDropToGround(void)
 	}	
 }
 
-//当前时间戳
-uint32_t timestamp = 0;
+
+void setCommanderCtrlMode(uint8_t set)
+{
+	commander.ctrlMode = (set & 0x03);
+}
+
+void setCommanderFlightmode(bool set)
+{
+	commander.flightMode = set;
+}
 
 
-/*遥控数据缓存*/
-void remoter_data_cache(ctrlSrc_e ctrlSrc, ctrlVal_t pk)
+/*飞控数据缓存*/
+void flightCtrldataCache(ctrlSrc_e ctrlSrc, ctrlVal_t pk)
 {
 	switch(ctrlSrc)
 	{
 		case ATK_REMOTER:
 			remoteCache.tarVal[!remoteCache.activeSide] = pk;
 			remoteCache.activeSide = !remoteCache.activeSide;
-			remoteCache.timestamp = HAL_GetTick() ;
+			remoteCache.timestamp = HAL_GetTick();
 			break;
 		default :
 			break;

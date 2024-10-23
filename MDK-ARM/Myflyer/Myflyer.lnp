@@ -36,6 +36,8 @@
 "myflyer\usart_comm.o"
 "myflyer\radio_comm.o"
 "myflyer\atkp.o"
+"myflyer\remoter.o"
+"myflyer\commander.o"
 "myflyer\sensors.o"
 "myflyer\spl06.o"
 --strict --scatter "Myflyer\Myflyer.sct"

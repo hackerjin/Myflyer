@@ -5,6 +5,8 @@
 #include "usart.h"
 #include "sensors.h"
 #include "radio_comm.h"
+#include "atkp.h"
+
 
 extern void usart_comm_init();
 extern void atkp_init();
@@ -60,11 +62,14 @@ TaskHandle_t sensorsTask;
 
 TaskHandle_t radioCommTask;
 
+TaskHandle_t atkpRxTask;
+
 void start_task(void* arg)
 {
     taskENTER_CRITICAL();
     //xTaskCreate(sensors_task,"sensors_task",300,NULL,8,&sensorsTask);        
     xTaskCreate(radio_comm_task,"radio_comm_task",300,NULL,15,&radioCommTask);  
+    xTaskCreate(atkp_rx_task,"atkp_rx_task",300,NULL,15,&atkpRxTask); 
     vTaskDelete(startTask);
     taskEXIT_CRITICAL();
 }

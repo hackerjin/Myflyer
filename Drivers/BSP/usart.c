@@ -61,7 +61,7 @@ int fputc(int ch, FILE *f)
 void usart1_init()
 {
     usart1.Instance = USART1;
-    usart1.Init.BaudRate = 9600;
+    usart1.Init.BaudRate = 115200;
     usart1.Init.WordLength = UART_WORDLENGTH_8B;
     usart1.Init.StopBits = UART_STOPBITS_1;
     usart1.Init.Parity = UART_PARITY_NONE;

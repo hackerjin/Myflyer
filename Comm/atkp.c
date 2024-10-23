@@ -73,7 +73,6 @@ void atkp_rxpacket_handle(atkp_t *rx_packet)
 
 
 
-
 //主控接收数据任务
 void atkp_rx_task(void *param)
 {
@@ -82,7 +81,7 @@ void atkp_rx_task(void *param)
 	{
         //从消息队列中获取消息，此处获取到的数据是已经去掉帧头帧尾的
 		xQueueReceive(rxQueue, &p, portMAX_DELAY);
-        
+   
         //处理获取的消息
 		atkp_rxpacket_handle(&p);
 	}
