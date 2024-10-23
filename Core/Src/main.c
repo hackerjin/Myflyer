@@ -6,7 +6,7 @@
 #include "sensors.h"
 #include "radio_comm.h"
 #include "atkp.h"
-
+#include "motor.h"
 
 extern void usart_comm_init();
 extern void atkp_init();
@@ -90,6 +90,9 @@ int main(void)
     I2C1_Init();
     
     usart_comm_init();
+    
+    
+    motorsInit();
     
     radio_init();
     
